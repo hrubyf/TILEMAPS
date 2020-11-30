@@ -11,7 +11,8 @@ https://drive.google.com/file/d/1IVb6NvgHeaLNpawO-VdfO230Rebc7kwz/view?usp=shari
 Da wir es mit ordinal-skalierten (d.h. nach den Rängen 1 bis 8 geordneten) Daten zu tun haben und daher von keiner Normalverteilung ausgehen können, müssen wir einen nicht-parametrischen Test verwenden. Hierfür bietet sich in unserem Fall der Kruskal–Wallis Test an:
  
 *"Use the Kruskal–Wallis test when you have one nominal variable and one ranked variable. It tests whether the mean ranks are the same in all the groups." (McDonald, J. H. (2009): Handbook of biological statistics).*
-## R-snippets | Aufbereitung und Durchsicht der Daten
+## R-SNIPPETS 
+## Aufbereitung und Durchsicht der Daten
 a) Zum Einlesen von Exceldateien das Paket "readxl" installieren und laden: 
 ```
 install.packages("readxl")
@@ -38,3 +39,6 @@ kruskal.test(HEX$Rank~HEX$Design)
 ```
 ## Post-hoc-Test 
 Zwischen welchen Tilemaps gibt es in Bezug auf die Bewertung signifikante Unterschiede?
+```
+pairwise.wilcox.test(HEX$Rank, HEX$Design, paired = FALSE, p.adjust = "bonferroni")
+```
