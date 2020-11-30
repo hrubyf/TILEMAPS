@@ -1,4 +1,4 @@
-# TILEMAPS
+# HEXAGON TILEMAPS
 [Download RStudio](https://rstudio.com/products/rstudio/download/#download)
 ## Testfrage A
 Welche Abbildung gibt Ihrer Meinung nach die geographische Gestalt der Steiermark am besten wieder? Weisen Sie bitte jeder Abbildung (A bis H) einen Rang von 1 (finde ich am geeignetsten) bis 8 (finde ich am ungeeignetsten) zu, bis alle Rangplätze zwischen 1 und 8 vergeben sind.
@@ -41,4 +41,15 @@ kruskal.test(HEX$Rank~HEX$Design)
 Zwischen welchen Tilemaps gibt es in Bezug auf die Bewertung signifikante Unterschiede?
 ```
 pairwise.wilcox.test(HEX$Rank, HEX$Design, paired = FALSE, p.adjust = "bonferroni")
+```
+## Testfrage B
+Welche Abbildung gibt Ihrer Meinung nach die geographische Gestalt der Steiermark am besten wieder? Weisen Sie bitte jeder Abbildung (A bis H) einen Rang von 1 (finde ich am geeignetsten) bis 8 (finde ich am ungeeignetsten) zu, bis alle Rangplätze zwischen 1 und 8 vergeben sind.
+![alt text](https://lh4.googleusercontent.com/uMi2zloyyGRcsZSEsRvLDt2DjTIQMyDPNRPkErA2XrNFpCtfDiYgcFGke7g-UJsjNDHO7TebB4JDkmozcZzvWNdyaS0Ahy5F7RoVsG6PNY5bsUt1n-h8QVZqFaUjiQ=w1117)
+
+## Download der gesammelten empirischen Daten
+https://drive.google.com/file/d/1IVb6NvgHeaLNpawO-VdfO230Rebc7kwz/view?usp=sharing
+
+## Einstichproben-Wilcoxon-Test
+```
+wilcox.test(HEXvsSQU$Rank, mu=1.5)
 ```
