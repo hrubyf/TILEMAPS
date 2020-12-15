@@ -53,3 +53,6 @@ https://drive.google.com/file/d/1msdEsIRhzEFXvxpVZE3LdYFv1Xi61kTp/view?usp=shari
 ```
 wilcox.test(HEXvsSQU$Rank, mu=1.5)
 ```
+## Testfrage C
+Welches Hexagon gibt Ihrer Meinung nach die geographische Lage des Bezirks "XY" am besten wieder?
+![alt text](https://lh3.googleusercontent.com/Gu8up1JPQ8_B4FUaIBZ2y6MnHTqkPoisMNMSs6cM5Jh_ZwoHEe0HyVp10OXRWS1GYav-wRAbhcKkJvh7VWhFfSd5J3iAShWwj1RljyvEUWsvAD4uQYKyiu6mzdry2w=w1500)
