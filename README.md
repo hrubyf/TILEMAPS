@@ -65,8 +65,19 @@ Welches Hexagon gibt Ihrer Meinung nach die geographische Lage des Bezirks "XY" 
   * H0: Die Präferenzen der User verteile sich gleichermassen auf mehrere Hexagone
   * HA: Die Präferenzen der User verteile sich nicht gleichermassen auf mehrere Hexagone, d.h. es gibt ein Hexagon, dass den jeweiligen Bezirk am besten repräsentiert.
 
-Zum Beispiel: 33 Personen sind der Meinung, dass das Hexagon A den Bezirk Liezen am besten repräsentiert, 5 Personen entscheiden sich für Hexagon B, je zwei Personen für D und G, und je eine Person für C und H. 
+Zum Beispiel: 33 Personen sind der Meinung, dass das Hexagon A den Bezirk Liezen am besten repräsentiert, 5 Personen entscheiden sich für Hexagon B, je zwei Personen für D und G, und je eine Person für C und H. Handelt es sich hier um eine zufällige Verteilung(H0), oder können wir mit mehr als 95% Wahrscheinlichkeit (p < 0.5) davon ausgehen, dass die bei den ProbandInnen beobachtete Präferenz von A statistisch signifikant ist (HA)?
 ```
-wilcox.test(HEXvsSQU$Rank, mu=1.5)
+#direktes Einlesen der Werte in eine Variable
+LI <-c(33,5)
+
+#ausführen des Chi-Quadrat-Anpassungstest 
+chisq.test(LI)
 ```  
+```
+Chi-squared test for given probabilities
+
+data:  LI
+X-squared = 109.27, df = 5, p-value < 2.2e-16
+```
+Da der p-Wert deutlich unter 0.5 liegt, kann die Alternativhypothese angenommen werden.
 
