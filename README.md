@@ -32,8 +32,8 @@ describeBy(HEX$Rank, HEX$Design)
 boxplot(HEX$Rank~HEX$Design)
 ```
 ## Test auf Unterschiede hinsichtlich der Präferenzen verschiedener Tilemaps. 
-H0: Alle Tilemaps werden ähnlich bewertet. Kein Design wird als besonders gut oder schlecht evaluiert.
-HA: Die Bewertung einzelner Tilemaps unterscheiden sich signifikant.
+*H0: Alle Tilemaps werden ähnlich bewertet. Kein Design wird als besonders gut oder schlecht evaluiert.
+*HA: Die Bewertung einzelner Tilemaps unterscheiden sich signifikant.
 ```
 kruskal.test(HEX$Rank~HEX$Design)
 ```
