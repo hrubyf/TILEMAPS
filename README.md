@@ -50,9 +50,23 @@ Welche Abbildung gibt Ihrer Meinung nach die geographische Gestalt der Steiermar
 https://drive.google.com/file/d/1msdEsIRhzEFXvxpVZE3LdYFv1Xi61kTp/view?usp=sharing
 
 ## Einstichproben-Wilcoxon-Test
+  * H0: Die Präferenzen verteilen sich annähernd gleich auf beide Designs, d.h. kein Design wird bevorzugt.
+  * HA: Die Präferenzen verteilen sich nicht annähernd gleich auf beide Designs, d.h. ein Design wird bevorzugt.
 ```
 wilcox.test(HEXvsSQU$Rank, mu=1.5)
 ```
 ## Testfrage C
 Welches Hexagon gibt Ihrer Meinung nach die geographische Lage des Bezirks "XY" am besten wieder?
 ![alt text](https://lh3.googleusercontent.com/Gu8up1JPQ8_B4FUaIBZ2y6MnHTqkPoisMNMSs6cM5Jh_ZwoHEe0HyVp10OXRWS1GYav-wRAbhcKkJvh7VWhFfSd5J3iAShWwj1RljyvEUWsvAD4uQYKyiu6mzdry2w=w1500)
+
+## Download der gesammelten empirischen Daten
+
+## Chi-Quadrat-Anpassungstest (Goodness of Fit)
+  * H0: Die Präferenzen der User verteile sich gleichermassen auf mehrere Hexagone
+  * HA: Die Präferenzen der User verteile sich nicht gleichermassen auf mehrere Hexagone, d.h. es gibt ein Hexagon, dass den jeweiligen Bezirk am besten repräsentiert.
+
+Zum Beispiel: 33 Personen sind der Meinung, dass das Hexagon A den Bezirk Liezen am besten repräsentiert, 5 Personen entscheiden sich für Hexagon B, je zwei Personen für D und G, und je eine Person für C und H. 
+```
+wilcox.test(HEXvsSQU$Rank, mu=1.5)
+```  
+
