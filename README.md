@@ -60,6 +60,7 @@ Welches Hexagon gibt Ihrer Meinung nach die geographische Lage des Bezirks "XY" 
 ![alt text](https://lh3.googleusercontent.com/Gu8up1JPQ8_B4FUaIBZ2y6MnHTqkPoisMNMSs6cM5Jh_ZwoHEe0HyVp10OXRWS1GYav-wRAbhcKkJvh7VWhFfSd5J3iAShWwj1RljyvEUWsvAD4uQYKyiu6mzdry2w=w1500)
 
 ## Download der gesammelten empirischen Daten
+https://drive.google.com/file/d/1A35HDh73OUxrctyVjF7-fEcHegaZEhwA/view?usp=sharing
 
 ## Chi-Quadrat-Anpassungstest (Goodness of Fit)
   * H0: Die Präferenzen der User verteile sich gleichermassen auf mehrere Hexagone
