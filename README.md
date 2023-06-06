@@ -73,6 +73,7 @@ LI <-c(33,5)
 chisq.test(LI)
 
 #EINFACHER: Häufigkeiten auslesen
+AUF11 <- read_excel("Aufgabe11.xlsx")
 table(AUF11$`HEX: Liezen`)
 chisq.test(table(AUF11$`HEX: Liezen`))
 ```  
