@@ -68,12 +68,15 @@ https://drive.google.com/file/d/1A35HDh73OUxrctyVjF7-fEcHegaZEhwA/view?usp=shari
 
 Zum Beispiel: 33 Personen sind der Meinung, dass das Hexagon A den Bezirk Liezen am besten repräsentiert, 5 Personen entscheiden sich für Hexagon B, je zwei Personen für D und G, und je eine Person für C und H. Handelt es sich hier um eine zufällige Verteilung(H0), oder können wir mit mehr als 95% Wahrscheinlichkeit (p < 0.5) davon ausgehen, dass die bei den ProbandInnen beobachtete Präferenz von A statistisch signifikant ist (HA)?
 ```
-#direktes Einlesen der Werte in eine Variable
+#UMSTÄNDLICHER: direktes Einlesen der Werte in eine Variable
 LI <-c(33,5)
-
-#ausführen des Chi-Quadrat-Anpassungstest 
 chisq.test(LI)
+
+#EINFACHER: Häufigkeiten auslesen
+table(AUF11$`HEX: Liezen`)
+chisq.test(table(AUF11$`HEX: Liezen`))
 ```  
+
 ```
 Chi-squared test for given probabilities
 
