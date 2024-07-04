@@ -53,7 +53,7 @@ https://drive.google.com/file/d/1msdEsIRhzEFXvxpVZE3LdYFv1Xi61kTp/view?usp=shari
   * H0: Die Präferenzen verteilen sich annähernd gleich auf beide Designs, d.h. kein Design wird bevorzugt.
   * HA: Die Präferenzen verteilen sich nicht annähernd gleich auf beide Designs, d.h. ein Design wird bevorzugt.
 ```
-wilcox.test(HEXvsSQU$Rank, mu=1.5)
+wilcox.test(HEXvsSQU$Design, mu=1.5)
 ```
 ## Testfrage C
 Welches Hexagon gibt Ihrer Meinung nach die geographische Lage des Bezirks "XY" am besten wieder?
