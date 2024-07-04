@@ -79,6 +79,9 @@ chisq.test(table(AUF11$`HEX: Liezen`))
 ```  
 
 ```
+
+#ERGEBNIS:
+
 Chi-squared test for given probabilities
 
 data:  LI
